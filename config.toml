@@ -1,4 +1,5 @@
 baseurl = "https://example.com/"  # End your URL with a `/` trailing slash.
+publishDir = "docs"
 title = "Academic"
 copyright = "&copy; 2016 Your Name"
 theme = "academic"
