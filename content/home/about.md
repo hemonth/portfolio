@@ -12,31 +12,26 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Coding",
+    "Application Design",
+    "Information Technology",
+    "Internet of things"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "Masters in Computer Engineering"
+  institution = "University of Houston Clear Lake, USA."
+  year = 2016
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "Bachelor's in Electrical and Electronics"
+  institution = "Amrita University, India."
+  year = 2014
 
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
- 
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Hello, my name is Hemonth Mandava. I am a self-taught full stack developer. I primarily focus on writing clean, elegant, and efficient code.
+I am a true polyglot with ability to learn and adapt quickly to new environments and emerging new technologies. I like to work with a leading technology companies where I can prove and improve my professional skills, and be a part of the growing Industry.

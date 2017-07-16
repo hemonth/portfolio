@@ -25,7 +25,7 @@ defaultContentLanguageInSubdir = false
   organization = ""
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "profileImage.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "hemonth.agile@gmail.com"
   address = "Dallas, 75039, USA"
   office_hours = "Email me for appointment"
@@ -133,11 +133,6 @@ defaultContentLanguageInSubdir = false
     icon = "twitter"
     icon_pack = "fa"
     link = "//twitter.com/hemonth"
-
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
 
   [[params.social]]
     icon = "github"
