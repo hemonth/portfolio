@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on Academic</title>
-    <link>https://example.com/publication_types/</link>
-    <description>Recent content in Publication_types on Academic</description>
+    <title>Publication_types on Portfolio</title>
+    <link>https://hemonth.github.io/portfolio/publication_types/</link>
+    <description>Recent content in Publication_types on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016 Your Name</copyright>
+    <copyright>&amp;copy; 2017 Hemonth</copyright>
     <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    <atom:link href="/portfolio/publication_types/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>1</title>
-      <link>https://example.com/publication_types/1/</link>
+      <link>https://hemonth.github.io/portfolio/publication_types/1/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/publication_types/1/</guid>
+      <guid>https://hemonth.github.io/portfolio/publication_types/1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2</title>
-      <link>https://example.com/publication_types/2/</link>
+      <link>https://hemonth.github.io/portfolio/publication_types/2/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/publication_types/2/</guid>
+      <guid>https://hemonth.github.io/portfolio/publication_types/2/</guid>
       <description></description>
     </item>
     

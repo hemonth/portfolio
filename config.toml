@@ -1,5 +1,6 @@
 baseurl = "https://hemonth.github.io/portfolio/"  # End your URL with a `/` trailing slash.
-title = "Academic"
+title = "Portfolio"
+publishDir = "docs"
 copyright = "&copy; 2017 Hemonth"
 theme = "academic"
 enableEmoji = true
