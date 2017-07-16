@@ -36,9 +36,7 @@ weight = 1
 +++
 
 # Biography
-Hello, my name is Hemonth Mandava. I am a self-taught full stack developer. I primarily focus on writing clean, elegant, and efficient code.
 
-I am a true polyglot with ability to learn and adapt quickly to new environments and emerging new technologies. I like to work
-with a leading technology companies where I can prove and improve my professional skills, and be a part of the growing
-Industry.
+Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
