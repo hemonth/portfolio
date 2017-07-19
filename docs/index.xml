@@ -17,25 +17,6 @@
       
       <guid>https://hemonth.github.io/portfolio/post/first/</guid>
       <description>&lt;p&gt;Welocome to my page!!&lt;/p&gt;
-
-&lt;p&gt;&lt;div id=&#34;disqus_thread&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: &lt;a href=&#34;https://disqus.com/admin/universalcode/#configuration-variables*/&#34; target=&#34;_blank&#34;&gt;https://disqus.com/admin/universalcode/#configuration-variables*/&lt;/a&gt;
-var disqus_config = function () {
-this.page.url = &lt;a href=&#34;https://hemonth.github.io/portfolio/post/first/&#34; target=&#34;_blank&#34;&gt;https://hemonth.github.io/portfolio/post/first/&lt;/a&gt;;  // Replace PAGE_URL with your page&amp;rsquo;s canonical URL variable
-this.page.identifier = ; // Replace PAGE_IDENTIFIER with your page&amp;rsquo;s unique identifier variable
-};&lt;/p&gt;
-
-&lt;p&gt;(function() { // DON&amp;rsquo;T EDIT BELOW THIS LINE
-var d = document, s = d.createElement(&amp;lsquo;script&amp;rsquo;);
-s.src = &amp;lsquo;&lt;a href=&#34;https://https-hemonth-github-io-portfolio.disqus.com/embed.js&#39;&#34; target=&#34;_blank&#34;&gt;https://https-hemonth-github-io-portfolio.disqus.com/embed.js&#39;&lt;/a&gt;;
-s.setAttribute(&amp;lsquo;data-timestamp&amp;rsquo;, +new Date());
-(d.head || d.body).appendChild(s);
-})();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;https://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;&lt;/p&gt;
 </description>
     </item>
     
