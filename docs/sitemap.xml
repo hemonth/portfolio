@@ -5,8 +5,8 @@
     
     <url>
     
-      <loc>https://hemonth.github.io/portfolio/post/first/</loc>
-      <lastmod>2017-07-15T16:13:09-05:00</lastmod>
+      <loc>https://hemonth.github.io/portfolio/post/angular4materialdesign/</loc>
+      <lastmod>2017-07-20T12:00:00+00:00</lastmod>
     </url>
     
   
@@ -86,26 +86,9 @@
     
     <url>
     
-      <loc>https://hemonth.github.io/portfolio/post/managing-content/</loc>
-      <lastmod>2016-04-20T11:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://hemonth.github.io/portfolio/post/writing-markdown-latex/</loc>
-      <lastmod>2016-04-20T10:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://hemonth.github.io/portfolio/post/migrate-from-jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+      <loc>https://hemonth.github.io/portfolio/tags/angular4/</loc>
+      <lastmod>2017-07-20T12:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -152,8 +135,8 @@
     
     <url>
     
-      <loc>https://hemonth.github.io/portfolio/tags/jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+      <loc>https://hemonth.github.io/portfolio/tags/material-design/</loc>
+      <lastmod>2017-07-20T12:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

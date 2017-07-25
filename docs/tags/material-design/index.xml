@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Material Design on Portfolio</title>
+    <link>https://hemonth.github.io/portfolio/tags/material-design/</link>
+    <description>Recent content in Material Design on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Hemonth</copyright>
+    <lastBuildDate>Thu, 20 Jul 2017 12:00:00 +0000</lastBuildDate>
+    <atom:link href="/portfolio/tags/material-design/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular 4 material design and animations introduction</title>
+      <link>https://hemonth.github.io/portfolio/post/angular4materialdesign/</link>
+      <pubDate>Thu, 20 Jul 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://hemonth.github.io/portfolio/post/angular4materialdesign/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Step 1: Install it through command line:&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-angular&#34;&gt;  npm install --save @angular/material @angular/animations.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Add below import statements in app.module&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  import { BrowserAnimationsModule } from &#39;@angular/platform-browser/animations&#39;;
+  import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule} from &#39;@angular/material&#39;;
+  @NgModule({
+  imports: [
+   BrowserAnimationsModule,
+   MdButtonModule,
+   MdCardModule,
+   MdMenuModule,
+   MdToolbarModule,
+   MdIconModule
+  ],
+  })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternatively, you can create a separate NgModule that imports all of the Angular Material components that you will use in your application. You can then include this module wherever you&amp;rsquo;d like to use the components.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import { BrowserAnimationsModule } from &#39;@angular/platform-browser/animations&#39;;
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule} from &#39;@angular/material&#39;;
+
+@NgModule({
+    imports: [
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdCardModule,
+    MdMenuModule,
+    MdToolbarModule,
+    MdIconModule
+  ],
+  exports: [
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdCardModule,
+    MdMenuModule,
+    MdToolbarModule,
+    MdIconModule
+  ],
+})
+export class MyOwnCustomMaterialModule { }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Whichever approach you use, be sure to import the Angular Material modules after Angular&amp;rsquo;s BrowserModule, as the import order matters for NgModules.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3: Include a theme&lt;/strong&gt;&lt;br&gt; Including a theme is &lt;strong&gt;required&lt;/strong&gt; to apply all of the core and theme styles to your application.&lt;br&gt;
+  To get started with a prebuilt theme, include one of Angular Material&amp;rsquo;s prebuilt themes globally in your application. If you&amp;rsquo;re using the Angular CLI, you can add this to your &lt;code&gt;styles.css&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;  @import &amp;quot;~@angular/material/prebuilt-themes/indigo-pink.css&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are not using the Angular CLI, you can include a prebuilt theme via a element in your &lt;code&gt;index.html&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4: Add Material Icons&lt;/strong&gt;&lt;br&gt; If you want to use the &lt;code&gt;md-icon&lt;/code&gt; component with the official Material Design Icons, load the icon font in your &lt;code&gt;index.html&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;  &amp;lt;link href=&amp;quot;https://fonts.googleapis.com/icon?family=Material+Icons&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For more information on using Material Icons, check out the &lt;a href=&#34;https://google.github.io/material-design-icons/&#34; target=&#34;_blank&#34;&gt;Material Icons Guide&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
