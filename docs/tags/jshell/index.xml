@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jshell on Portfolio</title>
+    <link>https://hemonth.github.io/portfolio/tags/jshell/</link>
+    <description>Recent content in Jshell on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Hemonth</copyright>
+    <lastBuildDate>Sat, 05 Aug 2017 12:00:00 +0000</lastBuildDate>
+    <atom:link href="/portfolio/tags/jshell/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>jShell Introduction</title>
+      <link>https://hemonth.github.io/portfolio/post/jshell/</link>
+      <pubDate>Sat, 05 Aug 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://hemonth.github.io/portfolio/post/jshell/</guid>
+      <description>
+
+&lt;p&gt;One of the new coolest feature of java 9 is jShell. jShell / Project Kulla is the first official Java REPL (Read-Eval-Print-Loop), a command line tool that lets you run Java statements on their own without having to wrap them in classes or methods. We know scala and groovy already have this feature. Among the upcoming features of Java 9, it&amp;rsquo;s definitely going to be more interesting ones. To fire up and start playing with jshell we need to download jdk &amp;amp; jre 9 from &lt;a href=&#34;http://jdk.java.net/9/&#34; target=&#34;_blank&#34;&gt;http://jdk.java.net/9/&lt;/a&gt; . Once you are done with installation you need to setup JAVA_HOME as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;JAVA_HOME = C:\Program Files\Java\jdk-9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;once you are done setting the path variables open the command prompt and verify the java version&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java -version
+java version &amp;quot;9&amp;quot;
+Java(TM) SE Runtime Environment (build 9+181)
+Java HotSpot(TM) 64-Bit Server VM (build 9+181, mixed mode)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you see this, you can start using jShell by typing jShell on command prompt.&lt;/p&gt;
+
+&lt;p&gt;Now lets see some of the cool features of jShell:&lt;/p&gt;
+
+&lt;h1 id=&#34;expressions&#34;&gt;Expressions:&lt;/h1&gt;
+
+&lt;p&gt;Simply just type any valid java expression it will return you the value.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jshell&amp;gt; 1+2
+$1 ==&amp;gt; 3
+
+jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;default-imports&#34;&gt;Default Imports:&lt;/h1&gt;
+
+&lt;p&gt;By default you will get a set of common imports&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jshell&amp;gt; /imports
+|    import java.io.*
+|    import java.math.*
+|    import java.net.*
+|    import java.nio.file.*
+|    import java.util.*
+|    import java.util.concurrent.*
+|    import java.util.function.*
+|    import java.util.prefs.*
+|    import java.util.regex.*
+|    import java.util.stream.*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;jshell&amp;gt; Math.sqrt(16)
+$2 ==&amp;gt; 4.0
+jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;variables&#34;&gt;Variables:&lt;/h1&gt;
+
+&lt;p&gt;Declare variables and name them. Once you do that they become visible in scope.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jshell&amp;gt; int x=5
+x ==&amp;gt; 5
+jshell&amp;gt; int y=30
+y ==&amp;gt; 30
+jshell&amp;gt; int z=x+y
+z ==&amp;gt; 35
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;methods&#34;&gt;Methods:&lt;/h1&gt;
+
+&lt;p&gt;Define methods and even replace them.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jshell&amp;gt; public void helloWorld(){ System.out.println(&amp;quot;Hello World!!&amp;quot;); }
+|  created method helloWorld()
+
+jshell&amp;gt; public void helloWorld(){ System.out.println(&amp;quot;Override method successful!!&amp;quot;); }
+|  modified method helloWorld()
+
+jshell&amp;gt; helloWorld()
+Override method successful!!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;commands&#34;&gt;Commands:&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;/help&lt;/code&gt; lists all the commands jShell provides. Some of the most useful once are:&lt;/p&gt;
+
+&lt;h2 id=&#34;listing-variables&#34;&gt;Listing Variables&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;  jshell&amp;gt; /vars
+  |    int $1 = 3
+  |    double $2 = 4.0
+  |    int x = 5
+  |    int y = 30
+  |    int z = 35
+  jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;listing-methods&#34;&gt;Listing Methods&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;  jshell&amp;gt; /methods
+  |    void helloWorld()
+  jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;listing-sources&#34;&gt;Listing Sources&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;  jshell&amp;gt; /list
+  1 : 1+2
+  2 : Math.sqrt(16)
+  10 : int x=5;
+  11 : int y=30;
+  12 : int z=x+y;
+  14 : public void helloWorld(){ System.out.println(&amp;quot;Override method successful!!&amp;quot;); }
+  15 : helloWorld()
+  jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;editing-sources-in-external-editor&#34;&gt;Editing Sources In External Editor&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;  jshell&amp;gt; /edit helloWorld
+  |  modified method helloWorld()
+  jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;/edit&lt;/code&gt; will bring up an jShell edit pad and allow user to edit.
+&lt;a href=&#34;&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://www.packtpub.com/graphics/9781787282841/graphics/image_01_006.jpg&#34; alt=&#34;jShell Edit Pad&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;testing-java-niuanses&#34;&gt;Testing Java Niuanses&lt;/h2&gt;
+
+&lt;p&gt;Comparing autoboxed integers references which values are from range -128 to 127 (inclusive) returns true (they are cached)? You can verify that with shell in a matter of seconds:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  jshell&amp;gt; Integer i=129
+  i ==&amp;gt; 129
+  jshell&amp;gt; Integer j=129
+  j ==&amp;gt; 129
+  jshell&amp;gt; i == j
+  $28 ==&amp;gt; false
+  jshell&amp;gt; Integer i=127
+  i ==&amp;gt; 127
+  jshell&amp;gt; Integer j=127
+  j ==&amp;gt; 127
+  jshell&amp;gt; i == j
+  $31 ==&amp;gt; true
+  jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion:&lt;/h1&gt;
+
+&lt;p&gt;JShell is a very useful tool for prototyping and testing Java code snippets. There is also a JShell Java api which allows you to evaluate JShell from java. Once the java 9 is out I bet there will be JShell integrations in most popualar IDEs - this will make using it even more handy.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

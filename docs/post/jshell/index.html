@@ -39,11 +39,11 @@
   <link rel="icon" type="image/png" href="/portfolio/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/portfolio/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://hemonth.github.io/portfolio/post/angular4materialdesign/">
+  <link rel="canonical" href="https://hemonth.github.io/portfolio/post/jshell/">
 
   
 
-  <title>Angular 4 material design and animations introduction | Portfolio</title>
+  <title>jShell Introduction | Portfolio</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -153,22 +153,17 @@
 <article class="article" itemscope itemtype="http://schema.org/Article">
 
   
-<div class="article-header">
-  <img src="/portfolio/img/building-a-lightning-app-with-angular-material-design.jpg" class="article-banner" itemprop="image">
-  
-</div>
-
 
 
   <div class="article-container">
-    <h1 itemprop="name">Angular 4 material design and animations introduction</h1>
+    <h1 itemprop="name">jShell Introduction</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-07-20 12:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Thu, Jul 20, 2017
+    <time datetime="2017-08-05 12:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sat, Aug 5, 2017
     </time>
   </span>
 
@@ -180,10 +175,16 @@
   <span class="article-tags">
     <i class="fa fa-tags"></i>
     
-    <a href="/portfolio/tags/angular4">Angular4</a
+    <a href="/portfolio/tags/jshell">jShell</a
     >, 
     
-    <a href="/portfolio/tags/material-design">Material Design</a
+    <a href="/portfolio/tags/java-9">java 9</a
+    >, 
+    
+    <a href="/portfolio/tags/jdk-9-repl">JDK 9 REPL</a
+    >, 
+    
+    <a href="/portfolio/tags/repl">REPL</a
     >
     
   </span>
@@ -196,35 +197,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fangular4materialdesign%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fjshell%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Angular%204%20material%20design%20and%20animations%20introduction&amp;url=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fangular4materialdesign%2f"
+         href="https://twitter.com/intent/tweet?text=jShell%20Introduction&amp;url=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fjshell%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fangular4materialdesign%2f&amp;title=Angular%204%20material%20design%20and%20animations%20introduction"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fjshell%2f&amp;title=jShell%20Introduction"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fangular4materialdesign%2f&amp;title=Angular%204%20material%20design%20and%20animations%20introduction"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fjshell%2f&amp;title=jShell%20Introduction"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Angular%204%20material%20design%20and%20animations%20introduction&amp;body=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fangular4materialdesign%2f">
+         href="mailto:?subject=jShell%20Introduction&amp;body=https%3a%2f%2fhemonth.github.io%2fportfolio%2fpost%2fjshell%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -237,69 +238,150 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p><strong>Step 1: Install it through command line:</strong><br></p>
+      
 
-<pre><code class="language-angular">  npm install --save @angular/material @angular/animations.
+<p>One of the new coolest feature of java 9 is jShell. jShell / Project Kulla is the first official Java REPL (Read-Eval-Print-Loop), a command line tool that lets you run Java statements on their own without having to wrap them in classes or methods. We know scala and groovy already have this feature. Among the upcoming features of Java 9, it&rsquo;s definitely going to be more interesting ones. To fire up and start playing with jshell we need to download jdk &amp; jre 9 from <a href="http://jdk.java.net/9/" target="_blank">http://jdk.java.net/9/</a> . Once you are done with installation you need to setup JAVA_HOME as</p>
+
+<pre><code>JAVA_HOME = C:\Program Files\Java\jdk-9
 </code></pre>
 
-<p><strong>Step 2: Add below import statements in app.module</strong><br></p>
+<p>once you are done setting the path variables open the command prompt and verify the java version</p>
 
-<pre><code class="language-python">  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-  import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule} from '@angular/material';
-  @NgModule({
-  imports: [
-   BrowserAnimationsModule,
-   MdButtonModule,
-   MdCardModule,
-   MdMenuModule,
-   MdToolbarModule,
-   MdIconModule
-  ],
-  })
+<pre><code>java -version
+java version &quot;9&quot;
+Java(TM) SE Runtime Environment (build 9+181)
+Java HotSpot(TM) 64-Bit Server VM (build 9+181, mixed mode)
 </code></pre>
 
-<p>Alternatively, you can create a separate NgModule that imports all of the Angular Material components that you will use in your application. You can then include this module wherever you&rsquo;d like to use the components.</p>
+<p>Once you see this, you can start using jShell by typing jShell on command prompt.</p>
 
-<pre><code class="language-python">import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule} from '@angular/material';
+<p>Now lets see some of the cool features of jShell:</p>
 
-@NgModule({
-    imports: [
-    BrowserAnimationsModule,
-    MdButtonModule,
-    MdCardModule,
-    MdMenuModule,
-    MdToolbarModule,
-    MdIconModule
-  ],
-  exports: [
-    BrowserAnimationsModule,
-    MdButtonModule,
-    MdCardModule,
-    MdMenuModule,
-    MdToolbarModule,
-    MdIconModule
-  ],
-})
-export class MyOwnCustomMaterialModule { }
+<h1 id="expressions">Expressions:</h1>
+
+<p>Simply just type any valid java expression it will return you the value.</p>
+
+<pre><code>jshell&gt; 1+2
+$1 ==&gt; 3
+
+jshell&gt;
 </code></pre>
 
-<p>Whichever approach you use, be sure to import the Angular Material modules after Angular&rsquo;s BrowserModule, as the import order matters for NgModules.</p>
+<h1 id="default-imports">Default Imports:</h1>
 
-<p><strong>Step 3: Include a theme</strong><br> Including a theme is <strong>required</strong> to apply all of the core and theme styles to your application.<br>
-  To get started with a prebuilt theme, include one of Angular Material&rsquo;s prebuilt themes globally in your application. If you&rsquo;re using the Angular CLI, you can add this to your <code>styles.css</code>:</p>
+<p>By default you will get a set of common imports</p>
 
-<pre><code class="language-javascript">  @import &quot;~@angular/material/prebuilt-themes/indigo-pink.css&quot;;
+<pre><code>jshell&gt; /imports
+|    import java.io.*
+|    import java.math.*
+|    import java.net.*
+|    import java.nio.file.*
+|    import java.util.*
+|    import java.util.concurrent.*
+|    import java.util.function.*
+|    import java.util.prefs.*
+|    import java.util.regex.*
+|    import java.util.stream.*
 </code></pre>
 
-<p>If you are not using the Angular CLI, you can include a prebuilt theme via a element in your <code>index.html</code>.</p>
-
-<p><strong>Step 4: Add Material Icons</strong><br> If you want to use the <code>md-icon</code> component with the official Material Design Icons, load the icon font in your <code>index.html</code>.</p>
-
-<pre><code class="language-javascript">  &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel=&quot;stylesheet&quot;&gt;
+<pre><code>jshell&gt; Math.sqrt(16)
+$2 ==&gt; 4.0
+jshell&gt;
 </code></pre>
 
-<p>For more information on using Material Icons, check out the <a href="https://google.github.io/material-design-icons/" target="_blank">Material Icons Guide</a>.</p>
+<h1 id="variables">Variables:</h1>
+
+<p>Declare variables and name them. Once you do that they become visible in scope.</p>
+
+<pre><code>jshell&gt; int x=5
+x ==&gt; 5
+jshell&gt; int y=30
+y ==&gt; 30
+jshell&gt; int z=x+y
+z ==&gt; 35
+</code></pre>
+
+<h1 id="methods">Methods:</h1>
+
+<p>Define methods and even replace them.</p>
+
+<pre><code>jshell&gt; public void helloWorld(){ System.out.println(&quot;Hello World!!&quot;); }
+|  created method helloWorld()
+
+jshell&gt; public void helloWorld(){ System.out.println(&quot;Override method successful!!&quot;); }
+|  modified method helloWorld()
+
+jshell&gt; helloWorld()
+Override method successful!!
+</code></pre>
+
+<h1 id="commands">Commands:</h1>
+
+<p><code>/help</code> lists all the commands jShell provides. Some of the most useful once are:</p>
+
+<h2 id="listing-variables">Listing Variables</h2>
+
+<pre><code>  jshell&gt; /vars
+  |    int $1 = 3
+  |    double $2 = 4.0
+  |    int x = 5
+  |    int y = 30
+  |    int z = 35
+  jshell&gt;
+</code></pre>
+
+<h2 id="listing-methods">Listing Methods</h2>
+
+<pre><code>  jshell&gt; /methods
+  |    void helloWorld()
+  jshell&gt;
+</code></pre>
+
+<h2 id="listing-sources">Listing Sources</h2>
+
+<pre><code>  jshell&gt; /list
+  1 : 1+2
+  2 : Math.sqrt(16)
+  10 : int x=5;
+  11 : int y=30;
+  12 : int z=x+y;
+  14 : public void helloWorld(){ System.out.println(&quot;Override method successful!!&quot;); }
+  15 : helloWorld()
+  jshell&gt;
+</code></pre>
+
+<h2 id="editing-sources-in-external-editor">Editing Sources In External Editor</h2>
+
+<pre><code>  jshell&gt; /edit helloWorld
+  |  modified method helloWorld()
+  jshell&gt;
+</code></pre>
+
+<p><code>/edit</code> will bring up an jShell edit pad and allow user to edit.
+<a href="" rel="some text"><img src="https://www.packtpub.com/graphics/9781787282841/graphics/image_01_006.jpg" alt="jShell Edit Pad" /></a></p>
+
+<h2 id="testing-java-niuanses">Testing Java Niuanses</h2>
+
+<p>Comparing autoboxed integers references which values are from range -128 to 127 (inclusive) returns true (they are cached)? You can verify that with shell in a matter of seconds:</p>
+
+<pre><code>  jshell&gt; Integer i=129
+  i ==&gt; 129
+  jshell&gt; Integer j=129
+  j ==&gt; 129
+  jshell&gt; i == j
+  $28 ==&gt; false
+  jshell&gt; Integer i=127
+  i ==&gt; 127
+  jshell&gt; Integer j=127
+  j ==&gt; 127
+  jshell&gt; i == j
+  $31 ==&gt; true
+  jshell&gt;
+</code></pre>
+
+<h1 id="conclusion">Conclusion:</h1>
+
+<p>JShell is a very useful tool for prototyping and testing Java code snippets. There is also a JShell Java api which allows you to evaluate JShell from java. Once the java 9 is out I bet there will be JShell integrations in most popualar IDEs - this will make using it even more handy.</p>
 
     </div>
   </div>
@@ -310,13 +392,10 @@ export class MyOwnCustomMaterialModule { }
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://hemonth.github.io/portfolio/post/getting-started/"><span
-      aria-hidden="true">&larr;</span> Getting started with the Academic framework for Hugo</a></li>
+    <li class="previous"><a href="https://hemonth.github.io/portfolio/post/angular4materialdesign/"><span
+      aria-hidden="true">&larr;</span> Angular 4 material design and animations introduction</a></li>
     
 
-    
-    <li class="next"><a href="https://hemonth.github.io/portfolio/post/jshell/">jShell Introduction <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
