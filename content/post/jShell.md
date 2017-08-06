@@ -139,7 +139,7 @@ Override method successful!!
 ```
 
 `/edit` will bring up an jShell edit pad and allow user to edit.
-<a href="" rel="some text"><img src="https://www.packtpub.com/graphics/9781787282841/graphics/image_01_006.jpg" alt="jShell Edit Pad" /></a>
+[![jShell Edit Pad](https://www.packtpub.com/graphics/9781787282841/graphics/image_01_006.jpg)]()
 
 ## Testing Java Niuanses
 
@@ -159,6 +159,22 @@ Comparing autoboxed integers references which values are from range -128 to 127 
   jshell> i == j
   $31 ==> true
   jshell>
+```
+
+## REPL Networking
+
+With jShell we're not confined to our machine and have networking access, this opens up some interesting opportunities. For instance, think about using it as a terminal to communicate with your server, connecting remotely and controlling some parameters from the outside. Another option would be querying your database, and the possibilities here are really endless.
+
+```
+jshell> URL url = new URL("https://twitter.com/hemonthmandava")
+url ==> https://twitter.com/hemonthmandava
+
+jshell> URLConnection connection = url.openConnection()
+connection ==> sun.net.www.protocol.https.DelegateHttpsURLConnec ... twitter.com/hemonthmandava
+
+jshell> connection.getHeaderFields()
+$34 ==> {date=[Sat, 05 Aug 2017 23:52:30 GMT], null=[HTTP/1.1 200 OK], server=[tsa_b], x-ua-compatible=[IE=edge,chrome=1], expires=[Tue, 31 Mar 1981 05:00:00 GMT], x-response-time=[231], transfer-encoding=[chunked], x-frame-options=[SAMEORIGIN], x-transaction=[004281e90002c12f], strict-transport-security=[max-age=631138519], pragma=[no-cache], set-cookie=[ct0=d2178dc1826ab3f42a02c86296e05f21; Expires=Sun, 06 Aug 2017 05:52:30 UTC; Path=/; Domain=.twitter.com; Secure, guest_id=v1%3A150197715027179788; Expires=Mon, 05 Aug 2019 23:52:30 UTC; Path=/; Domain=.twitter.com, personalization_id="v1_0YKziyiLVsomYk1ppqSf6w=="; Expires=Mon, 05 Aug 2019 23:52:30 UTC; Path=/; ... at, 05 Aug 2017 23:52:30 GMT], x-xss-protection=[1; mode=block], x-content-type-options=[nosniff], x-connection-hash=[99684d9ded1cc7abf5f1facfda4cee96], x-twitter-response-tags=[BouncerCompliant], content-type=[text/html;charset=utf-8], cache-control=[no-cache, no-store, must-revalidate, pre-check=0, post-check=0], status=[200 OK]}
+jshell>
 ```
 
 # Conclusion:

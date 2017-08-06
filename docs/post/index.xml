@@ -136,7 +136,7 @@ Override method successful!!
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code&gt;/edit&lt;/code&gt; will bring up an jShell edit pad and allow user to edit.
-&lt;a href=&#34;&#34; rel=&#34;some text&#34;&gt;&lt;img src=&#34;https://www.packtpub.com/graphics/9781787282841/graphics/image_01_006.jpg&#34; alt=&#34;jShell Edit Pad&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+[&lt;img src=&#34;https://www.packtpub.com/graphics/9781787282841/graphics/image_01_006.jpg&#34; alt=&#34;jShell Edit Pad&#34; /&gt;]()&lt;/p&gt;
 
 &lt;h2 id=&#34;testing-java-niuanses&#34;&gt;Testing Java Niuanses&lt;/h2&gt;
 
@@ -155,6 +155,21 @@ Override method successful!!
   jshell&amp;gt; i == j
   $31 ==&amp;gt; true
   jshell&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;repl-networking&#34;&gt;REPL Networking&lt;/h2&gt;
+
+&lt;p&gt;With jShell we&amp;rsquo;re not confined to our machine and have networking access, this opens up some interesting opportunities. For instance, think about using it as a terminal to communicate with your server, connecting remotely and controlling some parameters from the outside. Another option would be querying your database, and the possibilities here are really endless.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jshell&amp;gt; URL url = new URL(&amp;quot;https://twitter.com/hemonthmandava&amp;quot;)
+url ==&amp;gt; https://twitter.com/hemonthmandava
+
+jshell&amp;gt; URLConnection connection = url.openConnection()
+connection ==&amp;gt; sun.net.www.protocol.https.DelegateHttpsURLConnec ... twitter.com/hemonthmandava
+
+jshell&amp;gt; connection.getHeaderFields()
+$34 ==&amp;gt; {date=[Sat, 05 Aug 2017 23:52:30 GMT], null=[HTTP/1.1 200 OK], server=[tsa_b], x-ua-compatible=[IE=edge,chrome=1], expires=[Tue, 31 Mar 1981 05:00:00 GMT], x-response-time=[231], transfer-encoding=[chunked], x-frame-options=[SAMEORIGIN], x-transaction=[004281e90002c12f], strict-transport-security=[max-age=631138519], pragma=[no-cache], set-cookie=[ct0=d2178dc1826ab3f42a02c86296e05f21; Expires=Sun, 06 Aug 2017 05:52:30 UTC; Path=/; Domain=.twitter.com; Secure, guest_id=v1%3A150197715027179788; Expires=Mon, 05 Aug 2019 23:52:30 UTC; Path=/; Domain=.twitter.com, personalization_id=&amp;quot;v1_0YKziyiLVsomYk1ppqSf6w==&amp;quot;; Expires=Mon, 05 Aug 2019 23:52:30 UTC; Path=/; ... at, 05 Aug 2017 23:52:30 GMT], x-xss-protection=[1; mode=block], x-content-type-options=[nosniff], x-connection-hash=[99684d9ded1cc7abf5f1facfda4cee96], x-twitter-response-tags=[BouncerCompliant], content-type=[text/html;charset=utf-8], cache-control=[no-cache, no-store, must-revalidate, pre-check=0, post-check=0], status=[200 OK]}
+jshell&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h1 id=&#34;conclusion&#34;&gt;Conclusion:&lt;/h1&gt;
