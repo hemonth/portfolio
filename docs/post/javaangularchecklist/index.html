@@ -286,8 +286,8 @@
 <h1 id="code-style">Code style</h1>
 
 <ul>
-<li>For backend, use Checkstyle in your project. Make sure you it is integrated with the build.</li>
-<li>For frontend, use ESLint or TSLint.</li>
+<li>For backend, use <a href="http://checkstyle.sourceforge.net/" target="_blank">Checkstyle</a> in your project. Make sure you it is integrated with the build.</li>
+<li>For frontend, use <code>ESLint</code> or <code>TSLint</code>.</li>
 </ul>
 
 <h1 id="ci-https-martinfowler-com-articles-continuousintegration-html"><a href="https://martinfowler.com/articles/continuousIntegration.html" target="_blank">CI</a></h1>
@@ -328,8 +328,8 @@
 
 <ul>
 <li>Think and discuss with team before choosing a name for public member.</li>
-<li>Java and JavaScript use PascalCase for classes, interfaces, enums, annotations.</li>
-<li>Java and JavaScript use camelCase for methods and variables.</li>
+<li>Java and JavaScript use <code>PascalCase</code> for classes, interfaces, enums, annotations.</li>
+<li>Java and JavaScript use <code>camelCase</code> for methods and variables.</li>
 </ul>
 
 <h1 id="exception-handling">Exception handling</h1>
@@ -337,7 +337,7 @@
 <ul>
 <li>Catch any checked exception thrown by the code.</li>
 <li>Convert checked exceptions to unchecked exceptions.</li>
-<li>Throw the unchecked exceotion. Unchecked exceptions could be couston or plain RuntimeExeception.</li>
+<li>Throw the unchecked exception. Unchecked exceptions could be couston or plain RuntimeExeception.</li>
 <li>Always use two argument constructor of RuntimeException. The fist take a message, second is the actual exception.</li>
 <li>Catch all exceptions thrown by code in your controller and resource classes.</li>
 <li>Log exceptions only in the controller or resource classes.</li>
@@ -352,9 +352,9 @@
 <li>Do not mix up singular and plural nouns. Keep it simple and use only plural nouns for all resources.</li>
 <li>If a resource is related to another resource use subresources.</li>
 <li>Both client and server need to know which format is used for the communication. The format has to be specified in the HTTP-Header.</li>
-<li>HATEOAS (<strong>Hypermedia as the Engine of Application State</strong>) is used to create a better navigation through the API&rsquo;s.</li>
+<li><code>HATEOAS</code> (<strong>Hypermedia as the Engine of Application State</strong>) is used to create a better navigation through the API&rsquo;s.</li>
 <li>Allow ascending and descending sorting over multiple fields.</li>
-<li>All exceptions should be mapped in an error payload. Here is an example how a JSON payload should look like.</li>
+<li>All exceptions should be mapped in an error payload.</li>
 </ul>
 
 <h1 id="logging">Logging</h1>

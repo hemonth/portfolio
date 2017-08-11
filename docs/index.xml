@@ -59,8 +59,8 @@
 &lt;h1 id=&#34;code-style&#34;&gt;Code style&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;For backend, use Checkstyle in your project. Make sure you it is integrated with the build.&lt;/li&gt;
-&lt;li&gt;For frontend, use ESLint or TSLint.&lt;/li&gt;
+&lt;li&gt;For backend, use &lt;a href=&#34;http://checkstyle.sourceforge.net/&#34; target=&#34;_blank&#34;&gt;Checkstyle&lt;/a&gt; in your project. Make sure you it is integrated with the build.&lt;/li&gt;
+&lt;li&gt;For frontend, use &lt;code&gt;ESLint&lt;/code&gt; or &lt;code&gt;TSLint&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;ci-https-martinfowler-com-articles-continuousintegration-html&#34;&gt;&lt;a href=&#34;https://martinfowler.com/articles/continuousIntegration.html&#34; target=&#34;_blank&#34;&gt;CI&lt;/a&gt;&lt;/h1&gt;
@@ -101,8 +101,8 @@
 
 &lt;ul&gt;
 &lt;li&gt;Think and discuss with team before choosing a name for public member.&lt;/li&gt;
-&lt;li&gt;Java and JavaScript use PascalCase for classes, interfaces, enums, annotations.&lt;/li&gt;
-&lt;li&gt;Java and JavaScript use camelCase for methods and variables.&lt;/li&gt;
+&lt;li&gt;Java and JavaScript use &lt;code&gt;PascalCase&lt;/code&gt; for classes, interfaces, enums, annotations.&lt;/li&gt;
+&lt;li&gt;Java and JavaScript use &lt;code&gt;camelCase&lt;/code&gt; for methods and variables.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;exception-handling&#34;&gt;Exception handling&lt;/h1&gt;
@@ -110,7 +110,7 @@
 &lt;ul&gt;
 &lt;li&gt;Catch any checked exception thrown by the code.&lt;/li&gt;
 &lt;li&gt;Convert checked exceptions to unchecked exceptions.&lt;/li&gt;
-&lt;li&gt;Throw the unchecked exceotion. Unchecked exceptions could be couston or plain RuntimeExeception.&lt;/li&gt;
+&lt;li&gt;Throw the unchecked exception. Unchecked exceptions could be couston or plain RuntimeExeception.&lt;/li&gt;
 &lt;li&gt;Always use two argument constructor of RuntimeException. The fist take a message, second is the actual exception.&lt;/li&gt;
 &lt;li&gt;Catch all exceptions thrown by code in your controller and resource classes.&lt;/li&gt;
 &lt;li&gt;Log exceptions only in the controller or resource classes.&lt;/li&gt;
@@ -125,9 +125,9 @@
 &lt;li&gt;Do not mix up singular and plural nouns. Keep it simple and use only plural nouns for all resources.&lt;/li&gt;
 &lt;li&gt;If a resource is related to another resource use subresources.&lt;/li&gt;
 &lt;li&gt;Both client and server need to know which format is used for the communication. The format has to be specified in the HTTP-Header.&lt;/li&gt;
-&lt;li&gt;HATEOAS (&lt;strong&gt;Hypermedia as the Engine of Application State&lt;/strong&gt;) is used to create a better navigation through the API&amp;rsquo;s.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HATEOAS&lt;/code&gt; (&lt;strong&gt;Hypermedia as the Engine of Application State&lt;/strong&gt;) is used to create a better navigation through the API&amp;rsquo;s.&lt;/li&gt;
 &lt;li&gt;Allow ascending and descending sorting over multiple fields.&lt;/li&gt;
-&lt;li&gt;All exceptions should be mapped in an error payload. Here is an example how a JSON payload should look like.&lt;/li&gt;
+&lt;li&gt;All exceptions should be mapped in an error payload.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;logging&#34;&gt;Logging&lt;/h1&gt;

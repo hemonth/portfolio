@@ -46,8 +46,8 @@ I am sharing some useful checklist that are required in building java + angular/
 
 # Code style
 
-- For backend, use Checkstyle in your project. Make sure you it is integrated with the build.
-- For frontend, use ESLint or TSLint.
+- For backend, use [Checkstyle](http://checkstyle.sourceforge.net/) in your project. Make sure you it is integrated with the build.
+- For frontend, use ```ESLint``` or ```TSLint```.
 
 # [CI](https://martinfowler.com/articles/continuousIntegration.html)
 
@@ -80,14 +80,14 @@ I am sharing some useful checklist that are required in building java + angular/
 # Naming
 
 - Think and discuss with team before choosing a name for public member.
-- Java and JavaScript use PascalCase for classes, interfaces, enums, annotations.
-- Java and JavaScript use camelCase for methods and variables.
+- Java and JavaScript use ```PascalCase``` for classes, interfaces, enums, annotations.
+- Java and JavaScript use ```camelCase``` for methods and variables.
 
 # Exception handling
 
 - Catch any checked exception thrown by the code.
 - Convert checked exceptions to unchecked exceptions.
-- Throw the unchecked exceotion. Unchecked exceptions could be couston or plain RuntimeExeception.
+- Throw the unchecked exception. Unchecked exceptions could be couston or plain RuntimeExeception.
 - Always use two argument constructor of RuntimeException. The fist take a message, second is the actual exception.
 - Catch all exceptions thrown by code in your controller and resource classes.
 - Log exceptions only in the controller or resource classes.
@@ -100,9 +100,9 @@ I am sharing some useful checklist that are required in building java + angular/
 - Do not mix up singular and plural nouns. Keep it simple and use only plural nouns for all resources.
 - If a resource is related to another resource use subresources.
 - Both client and server need to know which format is used for the communication. The format has to be specified in the HTTP-Header.
-- HATEOAS (**Hypermedia as the Engine of Application State**) is used to create a better navigation through the API's.
+- ```HATEOAS``` (**Hypermedia as the Engine of Application State**) is used to create a better navigation through the API's.
 - Allow ascending and descending sorting over multiple fields.
-- All exceptions should be mapped in an error payload. Here is an example how a JSON payload should look like.
+- All exceptions should be mapped in an error payload.
 
 # Logging
 
