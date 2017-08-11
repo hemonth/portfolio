@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Portfolio</title>
+    <link>https://hemonth.github.io/portfolio/tags/java/</link>
+    <description>Recent content in Java on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Hemonth</copyright>
+    <lastBuildDate>Thu, 10 Aug 2017 12:00:00 +0000</lastBuildDate>
+    <atom:link href="/portfolio/tags/java/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Checklist required in building Java &#43; Angular/React App</title>
+      <link>https://hemonth.github.io/portfolio/post/javaangularchecklist/</link>
+      <pubDate>Thu, 10 Aug 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://hemonth.github.io/portfolio/post/javaangularchecklist/</guid>
+      <description>
+
+&lt;p&gt;I am sharing some useful checklist that are required in building java + angular/react applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Suggestions &amp;amp; Feedbacks are highly appreciated.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;initial-steps&#34;&gt;Initial steps&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Finalize tech stack&lt;/li&gt;
+&lt;li&gt;Create a multi-module Maven or Gradle project. I recommend to start with two modules, one which contains front-end code like angular/react and back-end which contains java code.&lt;/li&gt;
+&lt;li&gt;Use Maven or Gradle wrapper scripts so that there is no need to install Maven or Gradle on the machine before executing the build.&lt;/li&gt;
+&lt;li&gt;Build project as a single jar/war file using a single command. If it is a maven project you should able to run &lt;code&gt;./mvnw clean install&lt;/code&gt; in the project root to build the executable.&lt;/li&gt;
+&lt;li&gt;Set up a Continuous Integration server and make sure it can build the project as a single executable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;git-http-nvie-com-posts-a-successful-git-branching-model&#34;&gt;&lt;a href=&#34;http://nvie.com/posts/a-successful-git-branching-model/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Work on feature branches.&lt;/li&gt;
+&lt;li&gt;Branch out from &lt;code&gt;develop&lt;/code&gt; branch.&lt;/li&gt;
+&lt;li&gt;Never push to &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;develop&lt;/code&gt;. Make a pull request.&lt;/li&gt;
+&lt;li&gt;Create pull request on the &lt;code&gt;develop&lt;/code&gt; and once it is tested then only merge to master. You can use different stratergy like merge to &lt;code&gt;master&lt;/code&gt; once sprint finishes.&lt;/li&gt;
+&lt;li&gt;Delete local and remote branches after merging. You can automate this process as well.&lt;/li&gt;
+&lt;li&gt;Before raising pull request, run the build locally and make sure all tests pass.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;.gitignore&lt;/code&gt; file.&lt;/li&gt;
+&lt;li&gt;Protect your master branch.&lt;/li&gt;
+&lt;li&gt;Never commit binary files to Git.&lt;/li&gt;
+&lt;li&gt;Write meaningful Git commits messages. &lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34;&gt;How to Write a Git Commit Message&amp;ndash; Chris Beams&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Feature branches should be short lived.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a new dependencies to the project after discussing with the team.&lt;/li&gt;
+&lt;li&gt;Use &lt;a href=&#34;https://snyk.io/&#34; target=&#34;_blank&#34;&gt;Snyk&lt;/a&gt; to check security vulnerabilities.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t add dependency for each problem you face. First check if you already have some dependency that solves the problem.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;code-style&#34;&gt;Code style&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For backend, use Checkstyle in your project. Make sure you it is integrated with the build.&lt;/li&gt;
+&lt;li&gt;For frontend, use ESLint or TSLint.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;ci-https-martinfowler-com-articles-continuousintegration-html&#34;&gt;&lt;a href=&#34;https://martinfowler.com/articles/continuousIntegration.html&#34; target=&#34;_blank&#34;&gt;CI&lt;/a&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Every code committed to version control system mainline should trigger a continuous integration job that runs on the integration server.&lt;/li&gt;
+&lt;li&gt;Continuous integration job should build the project and run all unit test cases. It should happen on each code commit to mainline.&lt;/li&gt;
+&lt;li&gt;Fix broken builds immediately. CI server should always be in healthy green state.&lt;/li&gt;
+&lt;li&gt;Make CI server visible and transparent to whole team.&lt;/li&gt;
+&lt;li&gt;Maintain build jobs as code use Jenkinsfile if you are using Jenkins.&lt;/li&gt;
+&lt;li&gt;You should be able to create build jobs on a new CI server using code.&lt;/li&gt;
+&lt;li&gt;Use pull request builder to build the project when pull request is raised.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;documentation-https-robots-thoughtbot-com-how-to-write-a-great-readme&#34;&gt;&lt;a href=&#34;https://robots.thoughtbot.com/how-to-write-a-great-readme&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create &lt;code&gt;README.md&lt;/code&gt; file in root of your project and keep it updated. The README file should have following&lt;/li&gt;
+&lt;li&gt;Couple of lines describing purpose of the project.&lt;/li&gt;
+&lt;li&gt;Instruction to grab the latest code and detailed instructions to build it.&lt;/li&gt;
+&lt;li&gt;Instructions to run the project on local machine.&lt;/li&gt;
+&lt;li&gt;Link to Continuous integration server.&lt;/li&gt;
+&lt;li&gt;Instruction to do any setup required for the project.&lt;/li&gt;
+&lt;li&gt;Instruction to grab project documentation.&lt;/li&gt;
+&lt;li&gt;Any other relevant information that can help a new developer get started with the project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;testing&#34;&gt;Testing&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write one automated functional test per user story.&lt;/li&gt;
+&lt;li&gt;Cover business logic with unit/Integration tests.&lt;/li&gt;
+&lt;li&gt;Understand different between unit testing and integration testing.&lt;/li&gt;
+&lt;li&gt;Use consistent names for tests.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;naming&#34;&gt;Naming&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Think and discuss with team before choosing a name for public member.&lt;/li&gt;
+&lt;li&gt;Java and JavaScript use PascalCase for classes, interfaces, enums, annotations.&lt;/li&gt;
+&lt;li&gt;Java and JavaScript use camelCase for methods and variables.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;exception-handling&#34;&gt;Exception handling&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catch any checked exception thrown by the code.&lt;/li&gt;
+&lt;li&gt;Convert checked exceptions to unchecked exceptions.&lt;/li&gt;
+&lt;li&gt;Throw the unchecked exceotion. Unchecked exceptions could be couston or plain RuntimeExeception.&lt;/li&gt;
+&lt;li&gt;Always use two argument constructor of RuntimeException. The fist take a message, second is the actual exception.&lt;/li&gt;
+&lt;li&gt;Catch all exceptions thrown by code in your controller and resource classes.&lt;/li&gt;
+&lt;li&gt;Log exceptions only in the controller or resource classes.&lt;/li&gt;
+&lt;li&gt;Log both the message and exception.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;rest-api-design&#34;&gt;Rest API Design&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;selection of resources is to analyze your business domain and extract the nouns that are relevant to your business needs.&lt;/li&gt;
+&lt;li&gt;Do not use &lt;code&gt;GET&lt;/code&gt; for state changes.&lt;/li&gt;
+&lt;li&gt;Do not mix up singular and plural nouns. Keep it simple and use only plural nouns for all resources.&lt;/li&gt;
+&lt;li&gt;If a resource is related to another resource use subresources.&lt;/li&gt;
+&lt;li&gt;Both client and server need to know which format is used for the communication. The format has to be specified in the HTTP-Header.&lt;/li&gt;
+&lt;li&gt;HATEOAS (&lt;strong&gt;Hypermedia as the Engine of Application State&lt;/strong&gt;) is used to create a better navigation through the API&amp;rsquo;s.&lt;/li&gt;
+&lt;li&gt;Allow ascending and descending sorting over multiple fields.&lt;/li&gt;
+&lt;li&gt;All exceptions should be mapped in an error payload. Here is an example how a JSON payload should look like.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;logging&#34;&gt;Logging&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use slf4j for logging.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;code-review-https-www-atlassian-com-agile-code-reviews&#34;&gt;&lt;a href=&#34;https://www.atlassian.com/agile/code-reviews&#34; target=&#34;_blank&#34;&gt;Code Review&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Code reviews are about code not people. Don&amp;rsquo;t take code criticism personally.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Are there any obvious logic errors in the code?&lt;/li&gt;
+&lt;li&gt;Are unit tests written for the business logic?&lt;/li&gt;
+&lt;li&gt;Does all the functional requirements met?&lt;/li&gt;
+&lt;li&gt;Does the code conform to existing style guidelines?&lt;/li&gt;
+&lt;li&gt;Propose better way to do certain tasks. It could be a library function that developer can use.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
